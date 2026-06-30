@@ -185,10 +185,10 @@ export default function HomePage() {
               Sledovať na Instagrame →
             </a>
           </div>
-          <div className="mt-12 grid grid-cols-3 gap-3 md:grid-cols-6">
+          <div className="mt-12 grid grid-cols-3 gap-4 md:grid-cols-6">
             {igImages.map((src, i) => (
               // eslint-disable-next-line @next/next/no-img-element
-              <img key={i} src={src} alt={`Instagram ${i + 1}`} className="aspect-square w-full rounded-lg object-cover" />
+              <img key={i} src={src} alt={`Instagram ${i + 1}`} className="arch aspect-[4/5] w-full object-cover" />
             ))}
           </div>
         </div>
