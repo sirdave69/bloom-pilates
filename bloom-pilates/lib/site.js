@@ -35,30 +35,22 @@ export const studio = {
   priceRange: "€€",
 };
 
-// Photo placeholders (Unsplash). Swap for the studio's own photography before launch.
+// Light, on-brand studio photography (Unsplash) — one consistent shoot that matches
+// the Figma mood. Swap for the studio's own photos before launch.
+const U = (id, w) =>
+  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
+
 export const img = {
-  hero:
-    "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1600&q=80",
-  reformer:
-    "https://images.unsplash.com/photo-1591258370814-01609b341790?auto=format&fit=crop&w=800&q=80",
-  barre:
-    "https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=800&q=80",
-  individual:
-    "https://images.unsplash.com/photo-1554344728-77cf90d9ed26?auto=format&fit=crop&w=800&q=80",
-  why:
-    "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&w=1000&q=80",
-  founder:
-    "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=900&q=80",
-  studio1:
-    "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=700&q=80",
-  studio2:
-    "https://images.unsplash.com/photo-1540206395-68808572332f?auto=format&fit=crop&w=700&q=80",
-  studio3:
-    "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=700&q=80",
-  ig1: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=400&q=70",
-  ig2: "https://images.unsplash.com/photo-1591258370814-01609b341790?auto=format&fit=crop&w=400&q=70",
-  ig3: "https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=400&q=70",
-  ig4: "https://images.unsplash.com/photo-1554344728-77cf90d9ed26?auto=format&fit=crop&w=400&q=70",
-  ig5: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=400&q=70",
-  ig6: "https://images.unsplash.com/photo-1540206395-68808572332f?auto=format&fit=crop&w=400&q=70",
+  hero: U("1717500251997-80b234166d00", 1600), // wide bright studio, arched window
+  reformer: U("1717500252642-ab69af027833", 800), // kneeling at push-through
+  barre: U("1717500251716-27057c48ace4", 800), // standing stretch
+  individual: U("1717500252106-2a9f83cc61ed", 800), // focused, straps
+  why: U("1717500252709-05a73fc4f1da", 1000), // calm wide studio
+  founder: U("1717500250411-9c523d269000", 900), // warm portrait
+  ig1: U("1717500252573-d31d4bf5ddf1", 500),
+  ig2: U("1717500252297-b09508db7ceb", 500),
+  ig3: U("1717500252179-2811af29e4f7", 500),
+  ig4: U("1717500251825-b397c67692a3", 500),
+  ig5: U("1717500251833-d807c5753ded", 500),
+  ig6: U("1717500250576-5ffefc5cfb93", 500),
 };
